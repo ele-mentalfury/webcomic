@@ -1,0 +1,44 @@
+.container {
+    max-width: 842px;
+    margin: 120px auto;
+  }
+  .container .viewer {
+    display: flex;
+  }
+  .container .viewer .left {
+    flex-basis: 150px;
+    padding: 20px;
+  }
+  .container .viewer .left h2 {
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  .container .viewer .left .active {
+    font-weight: bold;
+  }
+  .container .viewer .right {
+    flex-basis: 80%;
+  }
+  .container .viewer .right img#comic {
+    width: 660px;
+    height: 930px;
+  }
+  .container .viewer .right video#animation {
+    display: none;
+  }
+  .container .viewer .right .controls {
+    padding: 10px 0 0;
+    font-size: 1.2em;
+  }
+  .container .viewer .right .controls a#prev {
+    float: left;
+  }
+  .container .viewer .right .controls a#next {
+    float: right;
+  }
+  
+  @media (max-width: 910px) {
+    .left {
+      display: none;
+    }
+  }
